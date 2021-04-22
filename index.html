@@ -24,26 +24,52 @@
       }
       p {
         font-size: 32px;
-        color: #A668D5;
+        color: #a668d5;
         margin-bottom: 10px;
       }
-      #term{
-        border: 10px solid #41046F;
-        background-color: #41046F;
+      #term {
+        border: 10px solid #41046f;
+        background-color: #41046f;
         display: inline-block;
         border-radius: 20px;
-        padding: 10px;
         font-weight: bold;
-
       }
+      .btn {
+        margin-top: 40px;
+      }
+      .led1 {
+        text-decoration: none;
+        font-size: 28px;
+        color: #370a5a;
+        border: 10px solid blueviolet;
+        background-color: blueviolet;
+        border-radius: 20px;
+        box-shadow: 7px 5px 25px 0px #a668d5;
+        font-weight: bolder;
+        margin: 15px;       
+      }
+
     </style>
   </head>
   <body>
     <div id="webpage">
       <h1>Погода в доме</h1>
       <div id="term">
-        <p>Temperature: 22В°C</p>
-        <p>Humidity: 36%</p>
+        <p>Температура: 22°C</p>
+        <p>Влажность: 36%</p>
+      </div>
+
+      <div class="btn">
+
+        <a class="led1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
+          <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+        </svg>
+        Включить свет</a>
+
+        <a class="led1" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-brightness-alt-high" viewBox="0 0 16 16">
+          <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z"/>
+        </svg>
+        Выключить свет</a>
       </div>
     </div>
   </body>
